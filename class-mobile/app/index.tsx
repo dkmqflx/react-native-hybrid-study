@@ -1,5 +1,5 @@
-import LayoutHeaderTransparentPage from "@/components/section02/02-04-layout-header-transparent";
+import LayoutFooterPage from "@/components/section02/02-05-layout-footer";
 
 export default function IndexPage() {
-  return <LayoutHeaderTransparentPage />;
+  return <LayoutFooterPage />;
 }

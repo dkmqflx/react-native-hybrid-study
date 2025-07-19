@@ -1,5 +1,5 @@
-import RatioScalingPage from "@/components/section02/02-01-ratio-scaling";
+import LayoutHeaderGlobalPage from "@/components/section02/02-02-layout-header-global";
 
 export default function IndexPage() {
-  return <RatioScalingPage />;
+  return <LayoutHeaderGlobalPage />;
 }

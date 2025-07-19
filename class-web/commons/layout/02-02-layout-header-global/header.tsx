@@ -19,9 +19,9 @@ export default function HeaderGlobal() {
         gap: "0.3125rem",
       }}
     >
-      {options.hasLogo && <div>로고</div>}
-      {options.hasBack && <div>[ 뒤로가기버튼 ]</div>}
-      {options.title && <div>{options.title}</div>}
+      {options?.hasLogo && <div>로고</div>}
+      {options?.hasBack && <div>[ 뒤로가기버튼 ]</div>}
+      {options?.title && <div>{options.title}</div>}
     </header>
   );
 }

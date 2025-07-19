@@ -1,5 +1,5 @@
-import LayoutHeaderGlobalPage from "@/components/section02/02-02-layout-header-global";
+import LayoutHeaderLocalPage from "@/components/section02/02-03-layout-header-local";
 
 export default function IndexPage() {
-  return <LayoutHeaderGlobalPage />;
+  return <LayoutHeaderLocalPage />;
 }

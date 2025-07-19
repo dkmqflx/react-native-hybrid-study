@@ -1,5 +1,5 @@
-import PostMessageDeviceApiPromiseRefactoringPage from "@/components/section03/03-06-post-message-device-api-promise-refactoring";
+import DeviceSystemApiPage from "@/components/section04/04-01-device-system-api";
 
 export default function IndexPage() {
-  return <PostMessageDeviceApiPromiseRefactoringPage />;
+  return <DeviceSystemApiPage />;
 }

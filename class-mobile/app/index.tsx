@@ -1,5 +1,5 @@
-import WebviewInternetFailPage from "@/components/section01/01-05-webview-internet-fail";
+import RatioScalingPage from "@/components/section02/02-01-ratio-scaling";
 
 export default function IndexPage() {
-  return <WebviewInternetFailPage />;
+  return <RatioScalingPage />;
 }

@@ -1,5 +1,5 @@
-import PostMessageAppToWebPage from "@/components/section03/03-03-post-message-app-to-web";
+import PostMessageDeviceApiPage from "@/components/section03/03-04-post-message-device-api";
 
 export default function IndexPage() {
-  return <PostMessageAppToWebPage />;
+  return <PostMessageDeviceApiPage />;
 }

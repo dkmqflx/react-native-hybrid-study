@@ -1,5 +1,5 @@
-import ReactNativeTagsPage from "@/components/section01/01-02-react-native-tags";
+import WebviewPage from "@/components/section01/01-03-webview";
 
 export default function IndexPage() {
-  return <ReactNativeTagsPage />;
+  return <WebviewPage />;
 }

@@ -1,5 +1,5 @@
-import PostMessageWebToAppPage from "@/components/section03/03-02-post-message-web-to-app";
+import PostMessageAppToWebPage from "@/components/section03/03-03-post-message-app-to-web";
 
 export default function IndexPage() {
-  return <PostMessageWebToAppPage />;
+  return <PostMessageAppToWebPage />;
 }

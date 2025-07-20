@@ -1,5 +1,5 @@
-import ScheduleNotificationsPage from "@/components/section05/05-01-schedule-notifications";
+import ScheduleNotificationsClickPage from "@/components/section05/05-02-schedule-notifications-click";
 
 export default function IndexPage() {
-  return <ScheduleNotificationsPage />;
+  return <ScheduleNotificationsClickPage />;
 }

@@ -1,5 +1,5 @@
-import DeviceApiRefactoringPage from "@/components/section04/04-03-device-api-refactoring";
+import ScheduleNotificationsPage from "@/components/section05/05-01-schedule-notifications";
 
 export default function IndexPage() {
-  return <DeviceApiRefactoringPage />;
+  return <ScheduleNotificationsPage />;
 }

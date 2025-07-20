@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import DeviceSetting from "@/commons/settings/04-03-device-setting";
+import DeviceSettingVariables from "@/commons/settings/05-01-device-setting-variables";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <DeviceSetting>{children}</DeviceSetting>
+        <DeviceSettingVariables>{children}</DeviceSettingVariables>
       </body>
     </html>
   );

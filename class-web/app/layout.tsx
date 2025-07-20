@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import DeviceSettingRedirect from "@/commons/settings/06-02-device-setting-redirect";
+import DeviceSettingRedirect from "@/commons/settings/07-01-device-setting-redirect";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

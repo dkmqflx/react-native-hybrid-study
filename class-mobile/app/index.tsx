@@ -1,5 +1,5 @@
-import OpenSettingsAppStatePage from "@/components/section06/06-02-open-settings-app-state";
+import PictureFullScreenPage from "@/components/section07/07-01-picture-full-screen";
 
 export default function IndexPage() {
-  return <OpenSettingsAppStatePage />;
+  return <PictureFullScreenPage />;
 }

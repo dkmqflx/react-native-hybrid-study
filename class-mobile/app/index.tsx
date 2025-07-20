@@ -1,5 +1,5 @@
-import DeviceLocationApiPage from "@/components/section04/04-02-device-location-api";
+import DeviceApiRefactoringPage from "@/components/section04/04-03-device-api-refactoring";
 
 export default function IndexPage() {
-  return <DeviceLocationApiPage />;
+  return <DeviceApiRefactoringPage />;
 }

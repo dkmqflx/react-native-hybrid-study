@@ -1,5 +1,5 @@
-import PictureFullScreenPinchZoomPage from "@/components/section07/07-02-picture-full-screen-pinch-zoom";
+import AndroidBackPage from "@/components/section08/08-01-android-back";
 
 export default function IndexPage() {
-  return <PictureFullScreenPinchZoomPage />;
+  return <AndroidBackPage />;
 }

@@ -1,5 +1,5 @@
-import AndroidBackPage from "@/components/section08/08-01-android-back";
+import AndroidBackAndExitPage from "@/components/section08/08-04-android-back-and-exit";
 
 export default function IndexPage() {
-  return <AndroidBackPage />;
+  return <AndroidBackAndExitPage />;
 }

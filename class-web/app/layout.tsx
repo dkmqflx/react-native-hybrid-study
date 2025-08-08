@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import DeviceSettingBack from "@/commons/settings/08-01-device-setting-back";
+import DeviceSettingBackAndExit from "@/commons/settings/08-04-device-setting-back-and-exit";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -48,7 +48,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <DeviceSettingBack>{children}</DeviceSettingBack>
+        <DeviceSettingBackAndExit>{children}</DeviceSettingBackAndExit>
       </body>
     </html>
   );

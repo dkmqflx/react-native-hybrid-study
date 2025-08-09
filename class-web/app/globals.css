@@ -60,3 +60,34 @@ html::view-transition-new(root) {
   animation-name: 이동하기_다음페이지;
   animation-duration: 0.5s; /* 필요 시 animation-timing-function 등 조절 가능 */
 }
+
+/* section09/09-02-view-transition-back => 페이지이동 뒤로가기 애니메이션 추가 */
+@keyframes 뒤로가기_이전페이지 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes 뒤로가기_다음페이지 {
+  from {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html.뒤로가기::view-transition-old(root) {
+  animation-name: 뒤로가기_이전페이지;
+  animation-duration: 0.5s;
+}
+html.뒤로가기::view-transition-new(root) {
+  animation-name: 뒤로가기_다음페이지;
+  animation-duration: 0.5s;
+}

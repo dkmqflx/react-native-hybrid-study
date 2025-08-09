@@ -16,3 +16,47 @@ x = 40 / 9 * 1vw
 html {
   font-size: calc(40 / 9 * 1vw);
 }
+
+/* 
+section09/09-01-view-transition => 페이지 전환 애니메이션 정의
+- document.startViewTransition(...) 호출 시 브라우저가 이전/다음 화면을 스냅샷하여
+  html::view-transition-old(root) / html::view-transition-new(root) 가상 요소로 노출합니다.
+- 아래 keyframes와 선택자는 그 가상 요소에 적용될 애니메이션을 지정합니다.
+- 지원되지 않는 브라우저에서는 이 규칙이 무시되고 기본 전환이 수행됩니다.
+*/
+/* 현재 페이지를 왼쪽으로 밀어내는 슬라이드 아웃 */
+@keyframes 이동하기_이전페이지 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* 다음 페이지를 오른쪽에서 들어오게 하면서 페이드 인 */
+@keyframes 이동하기_다음페이지 {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* 이전 화면 스냅샷(OLD)에 애니메이션 적용 */
+html::view-transition-old(root) {
+  animation-name: 이동하기_이전페이지;
+  animation-duration: 0.5s; /* 필요 시 easing, delay 등을 추가할 수 있습니다 */
+}
+
+/* 다음 화면 스냅샷(NEW)에 애니메이션 적용 */
+html::view-transition-new(root) {
+  animation-name: 이동하기_다음페이지;
+  animation-duration: 0.5s; /* 필요 시 animation-timing-function 등 조절 가능 */
+}
